@@ -2,9 +2,9 @@
 
 function firstAndLast(str) {
 
-  let n = str.length; 
-  let charFirst = str.charAt(0).toUpperCase(); 
-  let charLast = str.charAt(n - 1).toUpperCase(); 
+  const n = str.length; 
+  const charFirst = str.charAt(0).toUpperCase(); 
+  const charLast = str.charAt(n - 1).toUpperCase(); 
 
   return [charFirst, charLast]
 } 
@@ -17,7 +17,7 @@ function reverse(array) {
 
 function numberThree(variable) {
   const input = $("input#sentence").val();
-  const newSentence = input.concat(variable)
+  const newSentence = input.concat(' ', variable)
 
  return newSentence
 }
@@ -27,8 +27,9 @@ function numberFour(str) {
   const index = n/2;
   const indexTwo = Math.round(index);
   const output = str.charAt(indexTwo);
+  const startSentence = output.concat(' ', str);
 
-  return output
+  return startSentence
 }
 
 // UI logic:
